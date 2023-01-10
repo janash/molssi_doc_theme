@@ -50,8 +50,8 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.intersphinx',
     'sphinx.ext.extlinks',
-		'sphinx_design',
-		'sphinx_copybutton'
+    'sphinx_design',
+    'sphinx_copybutton'
 ]
 
 autosummary_generate = True
@@ -110,7 +110,9 @@ html_theme_options = {
 	"logo": {
       "image_light": "molssi_main_logo.png",
       "image_dark": "molssi_main_logo_inverted_white.png",
-      "text": "Docs Theme"
+      "text": "Docs Theme",
+      "molssi_light": "molssi_main_logo.png",
+      "molssi_dark": "molssi_main_logo_inverted_white.png",
     },
 	"show_toc_level": 2,
 	"header_links_before_dropdown": 4,
@@ -119,6 +121,7 @@ html_theme_options = {
   ],
 
 	"secondary_sidebar_items": ["page-toc", "sourcelink"],
+    "footer_items": [ "molssi_footer" ],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
