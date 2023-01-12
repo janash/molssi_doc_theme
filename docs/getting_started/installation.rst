@@ -51,6 +51,13 @@ Updating ``conf.py``
 Next, you will need to update your Sphinx configuration file,
 `conf.py` to use the PyData Sphinx Theme.
 
+First change the theme to ``pydata_sphinx_theme``. Find the line for ``html_theme`` and modify it:
+
+.. code-block:: 
+	
+	html_theme = "pydata_sphinx_theme"
+
+
 Add ``sphinx-design`` to the ``extensions`` section in your ``conf.py``.
 You may also want to add a ``copy`` button to your code blocks. 
 To add this feature, add ``sphinx-copybutton`` to your extensions.
