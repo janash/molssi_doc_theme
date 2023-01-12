@@ -59,10 +59,12 @@ html[data-theme="dark"] dt:target {
     background-color: #000000;
 }
 
-html[data-theme="dark"] img {
+html .toctree-wrapper li[class^=toctree-l] {
+	list-style: circle;
+}
+
+img:not(.logo__image, .footer_logo) {
 	padding: 20px;
 }
 
-.toctree-wrapper li[class^=toctree-l] {
-	list-style: circle;
-}
+
