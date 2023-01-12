@@ -36,20 +36,20 @@ In your docs folder, create a directory called ``_static``.
 This will contain resources like images and custom CSS for your
 documentation.
 
-Add your light and dark logos to this folder.
-This logo will be the one used in the upper left corner of the site.
-If you'd like to use the MolSSI Light/Dark logo, you can 
-find them in 
-`the example repository <https://github.com/jchen0506/molssi_doc_theme/tree/main/docs/_static>`_.
+Download and add the following files to your docs folder:
 
-Add the light and dark theme logos to the ``_static`` folder, 
-and add the ``custom.css`` file in a directory under ``_static``
-called ``css``.
+#. :download:`Custom CSS <../_static/css/custom.css>` - Save as ``_static/css/custom.css```
+
+#. :download:`Light MolSSI logo <../_static/molssi_main_logo.png>` - Place in ``_static``
+
+#. :download:`Dark MolSSI logo <../_static/molssi_main_logo_inverted_white.png>` - Place in ``_static``
+
+#. :download:`MolSSI footer <../_templates/molssi_footer.html>` - Save as ``_templates/molssi_footer.html``
 
 Updating ``conf.py``
 --------------------
 Next, you will need to update your Sphinx configuration file,
-`conf.py` to use the PyData Sphinx Theme.
+``conf.py`` to use the PyData Sphinx Theme.
 
 First change the theme to ``pydata_sphinx_theme``. Find the line for ``html_theme`` and modify it:
 
@@ -67,73 +67,63 @@ your ``extensions``, might look like the following after you have updated your e
 
 .. code-block:: 
 
-   extensions = [
-    'sphinx.ext.autosummary',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.extlinks',
-	 'sphinx_design',
-    'sphinx_copybutton'
-   ]
+    extensions = [
+        'sphinx.ext.autosummary',
+        'sphinx.ext.autodoc',
+        'sphinx.ext.mathjax',
+        'sphinx.ext.viewcode',
+        'sphinx.ext.napoleon',
+        'sphinx.ext.intersphinx',
+        'sphinx.ext.extlinks',
+        'sphinx_design',
+        'sphinx_copybutton'
+        ]
 
-Next, change the theme and add the custom CSS:
+Next, change the theme and add the custom CSS, and make sure you have 
+the templates included:
 
 .. code-block::
 
-   html_static_path = ['_static']
+    templates_path = ['_templates']
 
-   html_css_files = [
-   'css/custom.css',
-   ]
+    html_static_path = ['_static']
+
+    html_css_files = [
+    'css/custom.css',
+    ]
 
 You will need to configure use of the light and dark
 logos in your ``conf.py`` and set other HTML
-theme options. Make sure to update this with your project's
-GitHub URL.
+theme options. 
 
-
-.. code-block:: 
-   :linenos:
-
-   html_theme_options = {
-	"github_url": "https://github.com/YOUR_PROJECT_URL",
-	"twitter_url": "https://twitter.com/MolSSI_NSF",
-
-	"logo": {
-      "image_light": "molssi_main_logo.png",
-      "image_dark": "molssi_main_logo_inverted_white.png",
-    },
-	"show_toc_level": 2,
-	"header_links_before_dropdown": 4,
-	"external_links": [
-      {"name": "MolSSI", "url": "https://molssi.org"}
-   ],
-
-	"secondary_sidebar_items": ["page-toc", "sourcelink"],
-   }
-
-Note that this example assumes that you are using the default
-light and dark MolSSI logos.
-If your project has different logos, update the appropriate names on 
-``lines 6-7``. These logos should be in your ``_static`` folder
-as described in the previous section.
-
-If you would like a label next to your project logo in the navbar,
+Copy the following into your ``conf.py`` and change the sections in ALL CAPS
+for your project. If you would like a label next to your project logo in the navbar,
 you can also set this in your ``conf.py`` file by adding another
 entry to the ``logo`` section. 
-The label for this site is "Docs Theme".
+For example, the label for this site is "Docs Theme".
 
 .. code-block::
 
-   html_theme_options = {
-    "logo": {
-    	# Light and dark logo information here
-        "text": "YOUR PROJECT NAME",
+    html_theme_options = {
+        "github_url": "YOUR_GITHUB_URL",
+        "twitter_url": "https://twitter.com/MolSSI_NSF",
+
+        "logo": {
+        "image_light": "YOUR_LOGO_LIGHT.png",
+        "image_dark": "YOUR_LOGO_DARK.png",
+        "text": "PROJECT NAME",
+        "molssi_light": "molssi_main_logo.png",
+        "molssi_dark": "molssi_main_logo_inverted_white.png",
+        },
+        "show_toc_level": 2,
+        "header_links_before_dropdown": 4,
+        "external_links": [
+        {"name": "MolSSI", "url": "https://molssi.org"}
+    ],
+
+        "secondary_sidebar_items": ["page-toc", "sourcelink"],
+        "footer_items": [ "molssi_footer" ],
     }
-   }
 
 A First View of the Theme
 -------------------------
