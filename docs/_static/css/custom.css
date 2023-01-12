@@ -58,3 +58,11 @@ html[data-theme="dark"] .prev-next-area:hover a:hover p.prev-next-title:hover {
 html[data-theme="dark"] dt:target {
     background-color: #000000;
 }
+
+html[data-theme="dark"] img {
+	padding: 20px;
+}
+
+.toctree-wrapper li[class^=toctree-l] {
+	list-style: circle;
+}
