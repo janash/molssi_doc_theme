@@ -44,6 +44,8 @@ Download and add the following files to your docs folder:
 
 #. :download:`Dark MolSSI logo <../_static/molssi_main_logo_inverted_white.png>` - Place in ``_static``
 
+#. :download:`NSF logo <../_static/nsf.png>` - Place in ``_static``
+
 #. :download:`MolSSI footer <../_templates/molssi_footer.html>` - Save as ``_templates/molssi_footer.html``
 
 Updating ``conf.py``
