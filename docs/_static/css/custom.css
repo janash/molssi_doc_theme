@@ -71,3 +71,8 @@ img:not(.logo__image, .footer_logo) {
 .footer_logo {
 	max-height: 60px;
 }
+
+.table table, caption,thead,tbody, th, td{
+	border: thin solid gray;
+	text-align: center;
+}

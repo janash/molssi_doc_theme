@@ -8,7 +8,6 @@ To properly build documentation using, the MolSSI Doc Theme, you will need to in
 conda install -c conda-forge pydata-sphinx-theme sphinx-design
 ```
 
-
 Once installed, you can use the `Makefile` in this directory to compile static HTML pages by
 ```bash
 make html
