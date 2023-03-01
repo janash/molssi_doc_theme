@@ -73,6 +73,7 @@ img:not(.logo__image, .footer_logo) {
 }
 
 .table table, caption,thead,tbody, th, td{
-	border: thin solid gray;
+	border: thin solid gray !important;
 	text-align: center;
 }
+

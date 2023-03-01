@@ -14,4 +14,3 @@ To get started using the theme, we recommend reading / completing these pages in
 
 
 
-   
