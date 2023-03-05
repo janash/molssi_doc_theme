@@ -72,8 +72,9 @@ img:not(.logo__image, .footer_logo) {
 	max-height: 60px;
 }
 
-.table table, caption,thead,tbody, th, td{
+table.border, .border table, .border caption, .border thead, .border tbody, .border th, .border td {
 	border: thin solid gray !important;
 	text-align: center;
 }
+  }
 
