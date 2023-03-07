@@ -76,5 +76,8 @@ table.border, .border table, .border caption, .border thead, .border tbody, .bor
 	border: thin solid gray !important;
 	text-align: center;
 }
+
+.footer-items__start {
+	width: 100%;
   }
 
