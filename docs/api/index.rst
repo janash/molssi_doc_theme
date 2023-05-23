@@ -1,7 +1,6 @@
 API Documentation
 =================
 
-.. autosummary::
-   :toctree: autosummary
-
+.. toctree::
+   
    molssi_doc_theme.canvas
