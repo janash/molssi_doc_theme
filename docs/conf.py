@@ -90,7 +90,7 @@ pygments_style = 'default'
 # -- Options for HTML output -------------------------------------------------
 
 #================== JSON to Jinja ==================
-# Credit to Eric Holsher 
+# Credit to Eric Holscher 
 # See https://www.ericholscher.com/blog/2016/jul/25/integrating-jinja-rst-sphinx/
 # --------------------------------------------------
 # Get all json files from ../molssiai_hub and store them
