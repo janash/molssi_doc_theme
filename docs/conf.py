@@ -90,6 +90,9 @@ pygments_style = 'default'
 # -- Options for HTML output -------------------------------------------------
 
 #================== JSON to Jinja ==================
+# Credit to Eric Holsher 
+# See https://www.ericholscher.com/blog/2016/jul/25/integrating-jinja-rst-sphinx/
+# --------------------------------------------------
 # Get all json files from ../molssiai_hub and store them
 # in html_context variable for further processing in jinja 
 # templates in _template folder
@@ -116,7 +119,6 @@ def rst2jinja(app, docname, source):
 
 def setup(app):
     app.connect("source-read", rst2jinja)
-
 #===================================================
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
