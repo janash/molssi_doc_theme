@@ -83,6 +83,5 @@ You should be able to achieve updating the theme without fully updating your doc
    user_guide/index
    api/index
    developer_guide/index
-   jinja_templating/index
 
 
