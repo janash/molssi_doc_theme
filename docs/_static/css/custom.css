@@ -4,8 +4,8 @@ html[data-theme="light"] {
     --pst-color-primary: #ed1c24;
 	--pst-color-warning: #ed1c24;
 	--pst-color-primary-highlight: #bc151b;
-	--pst-color-secondary: #1d35e7;
-	--pst-color-secondary-highlight: #3e51e3;
+	--pst-color-secondary: #1A1A1A;
+	--pst-color-secondary-highlight: #222222;
 
 }
 
@@ -14,10 +14,10 @@ html[data-theme="dark"] {
 	--pst-color-warning: #ed1c24;
 	--pst-color-primary-highlight: #bc151b;
 	--pst-color-background: #1A1A1A;
-	--pst-color-secondary: #1d35e7;
-	--pst-color-secondary-highlight: #3e51e3;
-
-	
+	--pst-color-on-background: #222222;
+	--pst-color-surface: #222222;
+	--pst-color-secondary: #ffffff;
+	--pst-color-secondary-highlight: #ffffffb3;
 }
 
 html[data-theme="light"] a:hover {
@@ -28,8 +28,11 @@ html[data-theme="dark"] h1, html[data-theme="dark"] h2, html[data-theme="dark"] 
 	color: #ffffff;
 }
 
+html[data-theme="light"] a, a:visited {
+	color: var(--pst-color-primary);
+}
 
-html[data-theme="dark"] a {
+html[data-theme="dark"] a, a:visited {
 	color: #ffffff;
 }
 
